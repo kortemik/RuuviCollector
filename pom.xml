@@ -167,11 +167,4 @@
         <url>https://maven.pkg.github.com/kortemik/RuuviCollector</url>
       </repository>
     </distributionManagement>
-    <servers>
-      <server>
-        <id>github</id>
-        <username>kortemik</username>
-        <password>${{ secrets.GITHUB_TOKEN }}</password>
-      </server>
-    </servers>
 </project>
