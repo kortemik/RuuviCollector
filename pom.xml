@@ -14,7 +14,7 @@
     <repositories>
         <repository>
             <id>ruuvitag-common-java-mvn-repo</id>
-            <url>https://raw.github.com/Scrin/ruuvitag-common-java/mvn-repo/</url>
+            <url>https://maven.pkg.github.com/kortemik/ruuvitag-common-java</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
@@ -26,7 +26,7 @@
         <dependency>
             <groupId>fi.tkgwf.ruuvi</groupId>
             <artifactId>ruuvitag-common</artifactId>
-            <version>1.0.2</version>
+            <version>9.0.5</version>
         </dependency>
 
         <dependency>
@@ -160,5 +160,11 @@
             </plugin>
         </plugins>
     </build>
-
+    <distributionManagement>
+      <repository>
+        <id>github</id>
+        <name>GitHub Packages</name>
+        <url>https://maven.pkg.github.com/kortemik/RuuviCollector</url>
+      </repository>
+    </distributionManagement>
 </project>
