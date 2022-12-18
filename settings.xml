@@ -20,7 +20,7 @@
   </profiles>
   <servers>
     <server>
-      <id></id>
+      <id>ruuvitag-common-java-mvn-repo</id>
       <username>${env.GITHUB_ACTOR}</username>
       <password>${env.GITHUB_TOKEN}</password>
     </server>
