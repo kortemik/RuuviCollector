@@ -15,12 +15,22 @@
           <id>ruuvitag-common-java-mvn-repo</id>
           <url>https://maven.pkg.github.com/kortemik/ruuvitag-common-java</url>
         </repository>
+        <repository>
+          <id>github</id>
+          <name>GitHub Packages</name>
+          <url>https://maven.pkg.github.com/kortemik/RuuviCollector</url>
+        </repository>
       </repositories>
     </profile>
   </profiles>
   <servers>
     <server>
       <id>ruuvitag-common-java-mvn-repo</id>
+      <username>${env.GITHUB_ACTOR}</username>
+      <password>${env.GITHUB_TOKEN}</password>
+    </server>
+    <server>
+      <id>github</id>
       <username>${env.GITHUB_ACTOR}</username>
       <password>${env.GITHUB_TOKEN}</password>
     </server>
